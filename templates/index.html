@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center mb-4">Welcome to the Network Diagnostic Tool</h1>
+<p class="text-center mb-5">Select one of the tools below to begin:</p>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <!-- Dashboard Card -->
+    <div class="col">
+        <div class="card text-center h-100 shadow-sm">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwniF14CJmAzKqnihcY_V4-vrygIMWb9t2xg&s" class="card-img-top" alt="Dashboard Icon">
+            <div class="card-body">
+                <h5 class="card-title">Network Dashboard</h5>
+                <p class="card-text">Monitor your network health with real-time diagnostics.</p>
+                <a href="/dashboard" class="btn btn-primary">Go to Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ping Card -->
+    <div class="col">
+        <div class="card text-center h-100 shadow-sm">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2SDfZlr-VsNTNWdHF-ZubWYCstahidECL6g&s" class="card-img-top" alt="Ping Icon">
+            <div class="card-body">
+                <h5 class="card-title">Ping</h5>
+                <p class="card-text">Measure latency to any IP or domain and check packet loss.</p>
+                <a href="/ping" class="btn btn-primary">Start Ping Test</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- GeoIP Card -->
+    <div class="col">
+        <div class="card text-center h-100 shadow-sm">
+            <img src="https://e7.pngegg.com/pngimages/1000/644/png-clipart-google-maps-google-search-google-map-maker-computer-icons-map-angle-search-engine-optimization-thumbnail.png" class="card-img-top" alt="Geo IP Lookup Icon">
+            <div class="card-body">
+                <h5 class="card-title">Geo IP Lookup</h5>
+                <p class="card-text">Get geographic information about any IP address.</p>
+                <a href="/geoip" class="btn btn-primary">Start Lookup</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Traceroute Card -->
+    <div class="col">
+        <div class="card text-center h-100 shadow-sm">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu9ZBZ9FVZlRPehkWqlKALxgVpezTU3STjkg&s" class="card-img-top" alt="Traceroute Icon">
+            <div class="card-body">
+                <h5 class="card-title">Traceroute</h5>
+                <p class="card-text">Trace the route packets take to reach your target.</p>
+                <a href="/traceroute" class="btn btn-primary">Start Traceroute</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- DNS Lookup Card -->
+    <div class="col">
+        <div class="card text-center h-100 shadow-sm">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwSiGvBXTq5zk81YUU1wOub93CDJNDynv0Cw&s" class="card-img-top" alt="DNS Icon">
+            <div class="card-body">
+                <h5 class="card-title">DNS Lookup</h5>
+                <p class="card-text">Find the IP address associated with a domain.</p>
+                <a href="/dns" class="btn btn-primary">Start DNS Lookup</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Speed Test Card -->
+    <div class="col">
+        <div class="card text-center h-100 shadow-sm">
+            <img src="https://cdn-icons-png.flaticon.com/512/7616/7616086.png" class="card-img-top" alt="Speed Test Icon">
+            <div class="card-body">
+                <h5 class="card-title">Speed Test</h5>
+                <p class="card-text">Test your network's download and upload speeds.</p>
+                <a href="/speedtest" class="btn btn-primary">Run Speed Test</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

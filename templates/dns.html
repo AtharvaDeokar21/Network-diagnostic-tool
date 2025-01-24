@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>DNS Lookup Tool</h1>
+<form method="POST">
+    <input type="text" name="domain" placeholder="Enter domain name" class="form-control" required>
+    <button type="submit" class="btn btn-primary mt-2">Lookup</button>
+</form>
+{% if result %}
+<h3>Results for {{ domain }}</h3>
+<p>{{ result }}</p>
+{% endif %}
+{% endblock %}

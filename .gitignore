@@ -1,0 +1,80 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+*.env
+myenv/
+
+# Flask instance and config files
+instance/
+config.py
+
+# Flask-specific (if using)
+*.db
+
+# Log files
+*.log
+
+# Coverage reports
+.coverage
+*.cover
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Dependency directories (including those for production)
+node_modules/
+
+# Python egg-info directories
+*.egg-info/
+dist/
+build/
+
+# Cache files for package managers
+*.pdb
+*.pyc
+*.pyo
+*.pyd
+
+# Operating system files (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# IDE specific files (for example, for JetBrains IDEs)
+.idea/
+
+# .env or environment variable files
+.env
+*.env
+
+# Flask migrations folder
+migrations/
+
+# Docker files
+docker-compose.yml
+Dockerfile
+
+# Ignore SQLite database files (if using SQLite)
+*.sqlite3
+
+# Ignore Flask secret key file or any sensitive data (if not encrypted or handled securely)
+secret_key.txt
+
+# Coverage report and testing files
+nosetests.xml
+coverage.xml
+*.cover
+
+# Ignore environment files (e.g., secrets or API keys)
+.env
+*.env

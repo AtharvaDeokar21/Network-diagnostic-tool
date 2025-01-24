@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Bandwidth Monitor</h1>
+<p>Download Speed: <strong>{{ download_speed | round(2) }} MBps</strong></p>
+<p>Upload Speed: <strong>{{ upload_speed | round(2) }} MBps</strong></p>
+{% endblock %}

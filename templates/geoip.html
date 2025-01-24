@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>GeoIP Lookup</h1>
+<form method="POST">
+    <input type="text" name="ip" placeholder="Enter IP Address" class="form-control" required>
+    <button type="submit" class="btn btn-primary mt-2">Lookup</button>
+</form>
+{% if result %}
+    <h3>GeoIP Details:</h3>
+    <ul>
+        {% for key, value in result.items() %}
+        <li><strong>{{ key }}:</strong> {{ value }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}
